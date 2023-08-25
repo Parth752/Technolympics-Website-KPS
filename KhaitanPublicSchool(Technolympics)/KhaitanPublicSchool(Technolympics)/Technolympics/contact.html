@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <div class="chat-bar-collapsible">
+
+        <button id="chat-button" type="button" class="collapsible">Omenster
+
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+
+        </button>
+
+ 
+
+        <div class="content">
+
+            <div class="full-chat-block">
+
+                <!-- Message Container -->
+
+                <div class="outer-container">
+
+                    <div class="chat-container">
+
+                        <!-- Messages -->
+
+                        <div id="chatbox">
+
+                            <h5 id="chat-timestamp"></h5>
+
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+
+                        </div>
+
+                        <!-- User input box -->
+
+                        <div class="chat-bar-input-block">
+
+                            <div id="userInput">
+
+                                <input id="textInput" class="input-box" type="text" name="msg"
+
+                                    placeholder="Press 'Enter' To Send A Message">
+
+                                <p></p>
+
+                            </div>
+
+                            <div class="chat-bar-icons">
+
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+
+                                    onclick="heartButton()"></i>
+
+                                <i id="chat-icon" style="color: #333;" class="fa-solid fa-paper-plane"
+
+                                    onclick="sendButton()"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div id="chat-bar-bottom">
+
+                            <p></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="./images/logolo-removebg-preview.png" alt="Logo Image"></a>
+         <nav class="navbar">
+             <a href="index.html">Home<a>
+             <a href="about.html">About<a>
+             <a href="products.html">Products<a>
+             <a href="contact.html">Contact Us<a>
+         </nav>
+ 
+         <div class="icons">
+             <div class="fas fa-search" id="search-btn"></div>
+             <div class="fas fa-shopping-cart" id="cart-btn"></div>
+             <div class="fas fa-bars" id="menu-btn"></div>
+             <div class="fa-solid fa-user"></div>
+         </div>
+ 
+         <div class="search-form">
+             <input type="search" id="search-box" placeholder="Search here">
+             <label for="search-box" class="fas fa-search"><label>
+         </div>
+ 
+         <div class="cart-items-container">
+             <div class="cart-item">
+                 <span class="fas fa-times"></span>
+                 <img src="./images/ll.png" alt="">
+                 <div class="content">
+                     <h2 style="color: black;">Monitor</h2>
+                     <div class="price" style="color: black;">₹2000</div>
+                 </div>
+             </div>
+             <div class="cart-item">
+                 <span class="fas fa-times"></span>
+                 <img src="./images/mm.png" alt="">
+                 <div class="content">
+                     <h2 style="color: black;">RGB Lights</h2>
+                     <div class="price" style="color: black;">₹3000</div>
+                 </div>
+             </div>
+             <div class="cart-item">
+                 <span class="fas fa-times"></span>
+                 <img src="./images/chair.jpeg" alt="">
+                 <div class="content">
+                     <h2 style="color: black;">Gaming Chair</h2>
+                     <div class="price" style="color: black;">₹16000</div>
+                 </div>
+             </div>
+             <div class="cart-item">
+                         <span class="fas fa-times"></span>
+                         <img src="./images/key.png" alt="">
+                         <div class="content">
+                             <h2 style="color: black;">Gaming Keyboard</h2>
+                             <div class="price" style="color: black;">₹350</div>
+                         </div>
+                     </div>
+             <a href="#" class="btn">Proceed to Checkout</a>
+         </div>
+         </div>
+     </header>
+
+    <section class="location">
+        <div class="sub-heading">
+        <h1 style="color: white;">Contact Us</h1> 
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111989.3
+                1313239348!2d77.32498789285785!3d28.699635117441552!2m3!1f0!2f0!3f0!3m2!1i1
+                024!2i768!4f13.1!3m3!1m2!1s0x390cf1bb41c50fdf%3A0xe6f06fd26a7798ba!2sGhazia
+                bad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1658398422498!5m2!1sen!2sin" width="600" height="450"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <div class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Sahibabad, Ghaziabad, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 978539XXXX</h5>
+                        <p>Monday to Friday, 9AM to 5PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>Support@omengaming.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your email" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <section class="footer" style="background-image: url(./img/space_bg.jpg);">
+        <u style="color: white" ;>
+            <h4>About Us</h4>
+        </u>
+        <div class="icons" style="color: white;">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <h5 style="color: white;">Exploring limitless possibilities, one click at a time <i class="fa-solid fa-heart"></i> <br>Creators - Parth Saxena, Pranjal Garg & Darsh Singhal</h5>
+    </section>
+
+    <!-- js script -->
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="scripts/responses.js"></script>
+<script src="scripts/chat.js"></script>
+    
+</body>
+
+</html>
